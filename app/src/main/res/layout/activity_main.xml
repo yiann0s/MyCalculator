@@ -4,8 +4,9 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="10pt">
+>
     <EditText
+            android:layout_weight="1"
             android:background="@color/gray"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -13,14 +14,15 @@
             android:textColor="@color/white"
             android:ems="10"
             android:textSize="40sp"
-            android:id="@+id/editText" android:text="0" android:gravity="right" android:layout_marginTop="20pt"
+            android:id="@+id/editText" android:text="0" android:gravity="right"
             android:paddingTop="10pt"/>
     <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content" android:layout_weight="0">
 
         <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
             <Button
+                    android:textSize="18sp"
                     android:layout_weight="1"
                     android:background="@color/grayish"
                     android:text="AC"
@@ -28,6 +30,7 @@
                     android:layout_height="30pt"
                     android:id="@+id/button4"/>
             <Button
+                    android:textSize="18sp"
                     android:layout_weight="1"
                     android:background="@color/grayish"
                     android:text="+/-"
@@ -35,6 +38,7 @@
                     android:layout_height="30pt"
                     android:id="@+id/button5"/>
             <Button
+                    android:textSize="18sp"
                     android:layout_weight="1"
                     android:background="@color/grayish"
                     android:text="%"
@@ -42,6 +46,7 @@
                     android:layout_height="30pt"
                     android:id="@+id/button6"/>
             <Button
+                    android:textSize="18sp"
                     android:layout_weight="1"
                     android:textColor="@color/white"
                     android:background="@color/orange"
@@ -52,6 +57,7 @@
         </TableRow>
         <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
             <Button
+                    android:textSize="18sp"
                     android:layout_weight="1"
                     android:background="@color/grayish"
                     android:text="7"
@@ -59,6 +65,7 @@
                     android:layout_height="30pt"
                     android:id="@+id/button8"/>
             <Button
+                    android:textSize="18sp"
                     android:layout_weight="1"
                     android:background="@color/grayish"
                     android:text="8"
@@ -66,6 +73,7 @@
                     android:layout_height="30pt"
                     android:id="@+id/button9"/>
             <Button
+                    android:textSize="18sp"
                     android:layout_weight="1"
                     android:background="@color/grayish"
                     android:text="9"
@@ -73,6 +81,7 @@
                     android:layout_height="30pt"
                     android:id="@+id/button10"/>
             <Button
+                    android:textSize="18sp"
                     android:layout_weight="1"
                     android:textColor="@color/white"
                     android:background="@color/orange"
@@ -83,6 +92,7 @@
         </TableRow>
         <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
             <Button
+                    android:textSize="18sp"
                     android:layout_weight="1"
                     android:background="@color/grayish"
                     android:text="4"
@@ -90,6 +100,7 @@
                     android:layout_height="30pt"
                     android:id="@+id/button12"/>
             <Button
+                    android:textSize="18sp"
                     android:layout_weight="1"
                     android:background="@color/grayish"
                     android:text="5"
@@ -97,6 +108,7 @@
                     android:layout_height="30pt"
                     android:id="@+id/button13"/>
             <Button
+                    android:textSize="18sp"
                     android:layout_weight="1"
                     android:background="@color/grayish"
                     android:text="6"
@@ -104,6 +116,7 @@
                     android:layout_height="30pt"
                     android:id="@+id/button14"/>
             <Button
+                    android:textSize="18sp"
                     android:layout_weight="1"
                     android:textColor="@color/white"
                     android:background="@color/orange"
@@ -114,6 +127,7 @@
         </TableRow>
         <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
             <Button
+                    android:textSize="18sp"
                     android:layout_weight="1"
                     android:background="@color/grayish"
                     android:text="1"
@@ -121,6 +135,7 @@
                     android:layout_height="30pt"
                     android:id="@+id/button16"/>
             <Button
+                    android:textSize="18sp"
                     android:layout_weight="1"
                     android:background="@color/grayish"
                     android:text="2"
@@ -128,6 +143,7 @@
                     android:layout_height="30pt"
                     android:id="@+id/button17"/>
             <Button
+                    android:textSize="18sp"
                     android:layout_weight="1"
                     android:background="@color/grayish"
                     android:text="3"
@@ -135,6 +151,7 @@
                     android:layout_height="30pt"
                     android:id="@+id/button18"/>
             <Button
+                    android:textSize="18sp"
                     android:layout_weight="1"
                     android:background="@color/orange"
                     android:text="+"
@@ -147,14 +164,16 @@
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content" android:layout_weight="0">
         <Button
+                android:textSize="18sp"
                 android:background="@color/grayish"
                 android:text="0"
                 android:layout_width="60pt"
                 android:layout_height="30pt"
                 android:id="@+id/button" android:layout_weight="2"/>
         <Button
+                android:textSize="18sp"
                 android:background="@color/grayish"
                 android:text="."
                 android:layout_width="30pt"
@@ -162,6 +181,7 @@
                 android:id="@+id/button2"
                 android:layout_weight="1"/>
         <Button
+                android:textSize="18sp"
                 android:layout_weight="1"
                 android:background="@color/orange"
                 android:textColor="@color/white"
