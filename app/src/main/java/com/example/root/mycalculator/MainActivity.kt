@@ -104,4 +104,16 @@ class MainActivity : AppCompatActivity() {
         resultText.setText(finalNumber.toString())
         isNewOp=true
     }
+
+    fun butPercentEvent(view:View){
+        val number:Double=resultText.text.toString().toDouble()/100
+        resultText.setText(number.toString())
+        isNewOp=true
+
+    }
+
+    fun butCleanEvent(view:View){
+        resultText.setText("0")
+        isNewOp=true
+    }
 }
