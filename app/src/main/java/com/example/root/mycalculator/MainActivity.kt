@@ -14,6 +14,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun buttonNumberEvent(view: View){
+        if (isNewOp){
+            resultText.setText("")
+        }
+        isNewOp=false
         val buttonSelected = view as Button
         var buttonClickValue:String=resultText.text.toString()
         when(buttonSelected.id){
@@ -55,5 +59,49 @@ class MainActivity : AppCompatActivity() {
             }
         }
         resultText.setText(buttonClickValue)
+    }
+
+    var op="*"
+    var oldNumber=""
+    var isNewOp=true
+    fun butOpEvent(view:View){
+        val buttonSelected = view as Button
+        when(buttonSelected.id){
+            butMulti.id->{
+                op="*"
+            }
+            butDiv.id->{
+                op="/"
+            }
+            butSub.id->{
+                op="-"
+            }
+            butSum.id->{
+                op="+"
+            }
+        }
+        oldNumber=resultText.text.toString()
+        isNewOp=true
+    }
+
+    fun butEqualEvent(view: View){
+        val newNumber=resultText.text.toString()
+        var finalNumber:Double?=null
+        when (op){
+            "*"->{
+                finalNumber=oldNumber.toDouble()*newNumber.toDouble()
+            }
+            "/"->{
+                finalNumber=oldNumber.toDouble()/newNumber.toDouble()
+            }
+            "+"->{
+                finalNumber=oldNumber.toDouble()+newNumber.toDouble()
+            }
+            "-"->{
+                finalNumber=oldNumber.toDouble()-newNumber.toDouble()
+            }
+        }
+        resultText.setText(finalNumber.toString())
+        isNewOp=true
     }
 }

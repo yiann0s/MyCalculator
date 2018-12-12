@@ -56,7 +56,7 @@
                     android:text="/"
                     android:layout_width="30pt"
                     android:layout_height="30pt"
-                    android:id="@+id/button7"/>
+                    android:id="@+id/butDiv" android:onClick="butOpEvent"/>
         </TableRow>
         <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
             <Button
@@ -94,7 +94,7 @@
                     android:text="*"
                     android:layout_width="30pt"
                     android:layout_height="30pt"
-                    android:id="@+id/button11"/>
+                    android:id="@+id/butMulti" android:onClick="butOpEvent"/>
         </TableRow>
         <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
             <Button
@@ -132,7 +132,7 @@
                     android:text="-"
                     android:layout_width="30pt"
                     android:layout_height="30pt"
-                    android:id="@+id/button15"/>
+                    android:id="@+id/butSub" android:onClick="butOpEvent"/>
         </TableRow>
         <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
             <Button
@@ -170,7 +170,7 @@
                     android:textColor="@color/white"
                     android:layout_width="30pt"
                     android:layout_height="30pt"
-                    android:id="@+id/button19"/>
+                    android:id="@+id/butSum" android:onClick="butOpEvent"/>
         </TableRow>
     </TableLayout>
     <LinearLayout
@@ -203,6 +203,6 @@
                 android:text="="
                 android:layout_width="30pt"
                 android:layout_height="30pt"
-                android:id="@+id/button3"/>
+                android:id="@+id/button3" android:onClick="butEqualEvent"/>
     </LinearLayout>
 </LinearLayout>
